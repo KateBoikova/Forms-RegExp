@@ -50,7 +50,8 @@ form {
                       "c"
                       "d"
                       "e";
-
+  grid-auto-rows: 1fr 1fr 1fr 1fr 3fr;
+  
 }
 
 label {
@@ -87,6 +88,7 @@ label {
                        "3"
                        "4"
                        "5";
+  grid-auto-rows: 1fr 1fr 1fr 1fr 3fr;
 }
 
 .nameInput {
@@ -123,13 +125,10 @@ select {
 
 .textareaContainer {
   grid-area: 5;
-  height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  /* align-content: space-between; */
   margin-right: 15px;
-  /* margin-bottom: 9px; */
 }
 
 textarea {
@@ -160,6 +159,7 @@ input:invalid {
 #btn {
   color: white;
   text-shadow: rgb(31, 53, 53) 3px 3px 5px;
-  height: 30px; 
+  height: 40px; 
+  padding: 12px 0;
   margin-bottom: 0;
 } 
