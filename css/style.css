@@ -1,0 +1,165 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #2f9a76;
+  background-image: url(https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/beaches--ocean/close-up-of-ocean-wave-reflecting-sunshine.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.generalContainer {
+  height: 500px;
+  background: rgba(24, 150, 116, 0.6);
+  text-shadow: rgb(31, 53, 53) 3px 3px 3px;
+  box-shadow: 0 0 5px 5px darkslategray;
+  padding: 20px 30px 20px 15px;
+}
+
+.header {
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 1000px;
+}
+
+
+
+.formContainer {
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+
+.labelsContainer {
+  padding-left: 30px;
+  display: grid;
+  grid-template-areas:"a"
+                      "b"
+                      "c"
+                      "d"
+                      "e";
+
+}
+
+label {
+  display: inline-block;
+  padding-top: 9px;
+}
+
+.nameLabel {
+  grid-area: a;
+}
+
+.emailLabel {
+  grid-area: b;
+}
+
+.telLabel {
+  grid-area: c;
+}
+
+.selectLabel {
+  grid-area: d;
+}
+
+.messageLabel {
+  grid-area: e;
+  height: 70px;
+}
+
+.inputsContainer {
+  height: auto;
+  display: grid;
+  grid-template-areas: "1"
+                       "2"
+                       "3"
+                       "4"
+                       "5";
+}
+
+.nameInput {
+  grid-area: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameInput > input,
+.emailInput > input,
+.telInput > input,
+select {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.emailInput {
+  grid-area: 2;
+  display: flex;
+
+}
+
+.telInput {
+  grid-area: 3;
+  display: flex;
+
+}
+
+.selectInput {
+  grid-area: 4;
+  display: flex;
+
+}
+
+.textareaContainer {
+  grid-area: 5;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  /* align-content: space-between; */
+  margin-right: 15px;
+  /* margin-bottom: 9px; */
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+textarea::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+input,
+select {
+  height: 30px;
+}
+
+input:valid {
+  background-color: rgb(35, 179, 179);
+}
+
+input:invalid {
+  background-color: rgb(243, 174, 174);
+}
+
+#btn {
+  color: white;
+  text-shadow: rgb(31, 53, 53) 3px 3px 5px;
+  height: 30px; 
+  margin-bottom: 0;
+} 
